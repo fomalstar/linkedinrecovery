@@ -14,9 +14,10 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Loader2, Shield, Clock, Users } from "lucide-react";
 
-// IMPORTANT: Replace this with your actual Formspree form ID
-// Get your free form ID at https://formspree.io
-const FORMSPREE_FORM_ID = "YOUR_FORMSPREE_ID";
+// Web3Forms - sends emails directly to your address
+// Get your free access key at https://web3forms.com (just enter your email)
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+const RECIPIENT_EMAIL = "linkedemergency@protonmail.com";
 
 const followerRanges = [
   { value: "0-1000", label: "0 - 1,000 followers" },
@@ -50,36 +51,43 @@ export function DiagnosticForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     
-    // Add select values manually since they're controlled
-    formData.set("followers", followers);
-    formData.set("reason", reason);
+    // Determine priority level
+    const isHighPriority = followers === "10000+";
+    const priorityLabel = isHighPriority ? "[HIGH PRIORITY - 10k+ followers]" : "[Standard]";
     
-    // Add high priority flag
-    if (followers === "10000+") {
-      formData.set("priority", "HIGH PRIORITY - 10k+ followers");
-    }
+    // Build the submission data for Web3Forms
+    const data = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: `${priorityLabel} New LinkedIn Recovery Request`,
+      from_name: "LinkedIn Recovery Website",
+      to: RECIPIENT_EMAIL,
+      email: formData.get("email"),
+      linkedin_url: formData.get("linkedinUrl"),
+      follower_count: followers,
+      restriction_reason: restrictionReasons.find(r => r.value === reason)?.label || reason,
+      priority: isHighPriority ? "HIGH PRIORITY" : "Standard",
+      submitted_at: new Date().toLocaleString(),
+    };
 
     try {
-      const response = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData,
         headers: {
+          "Content-Type": "application/json",
           Accept: "application/json",
         },
+        body: JSON.stringify(data),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.success) {
         setIsSuccess(true);
         form.reset();
         setFollowers("");
         setReason("");
       } else {
-        const data = await response.json();
-        if (data.errors) {
-          setError(data.errors.map((err: { message: string }) => err.message).join(", "));
-        } else {
-          setError("Something went wrong. Please try again.");
-        }
+        setError(result.message || "Something went wrong. Please try again.");
       }
     } catch {
       setError("Network error. Please check your connection and try again.");
