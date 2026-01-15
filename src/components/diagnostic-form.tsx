@@ -242,7 +242,7 @@ export function DiagnosticForm() {
                 Processing...
               </>
             ) : (
-              "Start My Recovery"
+              "Get Started for $50"
             )}
           </Button>
 
@@ -253,7 +253,7 @@ export function DiagnosticForm() {
             </div>
             <div className="flex items-center gap-1">
               <Clock className="w-3.5 h-3.5" />
-              <span>24hr Response</span>
+              <span>2-4 Week Recovery</span>
             </div>
             <div className="flex items-center gap-1">
               <Users className="w-3.5 h-3.5" />

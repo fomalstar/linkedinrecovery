@@ -9,12 +9,12 @@ const faqs = [
   {
     question: "How long does the recovery process take?",
     answer:
-      "Most cases are resolved within 7-14 business days. However, complex cases involving identity verification or content violations may take longer. We provide regular updates throughout the process and work as efficiently as possible to get your account back.",
+      "Most accounts are recovered within 2 to 4 weeks. Complex cases involving identity verification or content violations may take longer. We provide regular updates throughout the process and don't stop until your account is back.",
   },
   {
     question: "What types of restrictions can you help with?",
     answer:
-      "We handle all types of LinkedIn restrictions including automation suspicions, content violations, identity verification issues, connection request limits, and account security concerns. During our initial assessment, we evaluate your specific situation and let you know if we can help.",
+      "We handle all types of LinkedIn restrictions including automation suspicions, content violations, identity verification issues, connection request limits, and account security concerns. We help even after a Permanent Restriction.",
   },
   {
     question: "Do you need my LinkedIn password?",
@@ -22,9 +22,9 @@ const faqs = [
       "No, we never ask for your password. We work through official LinkedIn channels and guide you through any actions needed from your end. Your account security is paramount, and we use methods that don't compromise your credentials.",
   },
   {
-    question: "What if my account can't be recovered?",
+    question: "What if LinkedIn already denied my appeal?",
     answer:
-      "We offer a 14-day money-back guarantee. If we determine that your case cannot be resolved, or if LinkedIn denies the appeal without any further options, you'll receive a full refund. We're transparent about the likelihood of success before we begin.",
+      "We help you even if LinkedIn already said 'no.' Many clients come to us after failed self-appeals. We don't stop until your account is back. Our experience and proven strategies often succeed where initial appeals failed.",
   },
   {
     question: "Why should I pay instead of appealing myself?",
@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "Can you help with permanently banned accounts?",
     answer:
-      "Permanent bans are challenging but not always impossible to reverse. We evaluate each case individually. Some permanent restrictions can be overturned with the right approach, while others may require alternative solutions. We'll be honest about your options.",
+      "Yes, we help even after a Permanent Restriction. Many accounts marked as 'permanently restricted' can still be recovered with the right approach. We evaluate each case and work persistently until your account is restored.",
   },
 ];
 

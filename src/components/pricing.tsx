@@ -1,23 +1,14 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Star, Zap } from "lucide-react";
+import { CheckCircle, Shield } from "lucide-react";
 
 const features = [
   "Full case audit and analysis",
   "Professional appeal letter",
   "LinkedIn communication handling",
   "Email support throughout process",
-  "Progress updates every 48 hours",
-  "14-day money-back guarantee",
-];
-
-const premiumFeatures = [
-  "Everything in Starter, plus:",
-  "Priority case handling",
-  "Direct phone support",
-  "Expedited review process",
-  "Account security audit",
-  "Connection backup assistance",
+  "Progress updates throughout recovery",
+  "We help even after a Permanent Restriction",
 ];
 
 export function Pricing() {
@@ -27,31 +18,27 @@ export function Pricing() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="font-[family-name:var(--font-playfair)] italic text-primary text-xl mb-4">
-            LinkedIn Account Restricted? Affordable Recovery
+            Simple, Transparent Pricing
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            LinkedIn Account Recovery Pricing
+            LinkedIn Account Recovery: $50
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            No hidden fees. No surprise charges. Professional LinkedIn restricted account recovery at a fair price.
+            No hidden fees. No surprise charges. One flat fee to get your account back.
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* Starter Plan */}
-          <Card className="relative border-2 border-gray-200 hover:border-primary/50 transition-colors">
-            <CardHeader className="pb-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">Recovery Starter</h3>
-                  <p className="text-sm text-gray-500">For standard accounts</p>
-                </div>
-                <Zap className="w-8 h-8 text-primary" />
+        {/* Single Pricing Card */}
+        <div className="max-w-lg mx-auto">
+          <Card className="relative border-2 border-primary shadow-xl shadow-primary/10">
+            <CardHeader className="pb-4 text-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">Professional Recovery</h3>
+                <p className="text-sm text-gray-500 mt-1">For all restricted accounts</p>
               </div>
-              <div className="mt-4">
-                <span className="text-4xl font-bold text-gray-900">$50</span>
-                <span className="text-gray-500 ml-2">one-time</span>
+              <div className="mt-6">
+                <span className="text-5xl font-bold text-gray-900">$50</span>
+                <span className="text-gray-500 ml-2">one-time fee</span>
               </div>
             </CardHeader>
             <CardContent>
@@ -64,72 +51,20 @@ export function Pricing() {
                 ))}
               </ul>
               <Button
-                className="w-full h-12 text-base bg-primary hover:bg-primary/90"
+                className="w-full h-12 text-base font-semibold bg-primary hover:bg-primary/90"
                 asChild
               >
-                <a href="#contact">Get Started</a>
+                <a href="#contact">Get Started for $50</a>
               </Button>
-              <p className="text-xs text-center text-gray-500 mt-3">
-                Ideal for accounts with less than 5,000 followers
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Premium Plan */}
-          <Card className="relative border-2 border-primary shadow-xl shadow-primary/10">
-            {/* Popular Badge */}
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-sm font-semibold px-4 py-1 rounded-full flex items-center gap-1">
-              <Star className="w-4 h-4 fill-current" />
-              Most Popular
-            </div>
-            <CardHeader className="pb-4 pt-8">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">Priority Recovery</h3>
-                  <p className="text-sm text-gray-500">For high-value accounts</p>
-                </div>
-                <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center">
-                  <Star className="w-5 h-5 text-white fill-current" />
-                </div>
-              </div>
-              <div className="mt-4">
-                <span className="text-4xl font-bold text-gray-900">$199</span>
-                <span className="text-gray-500 ml-2">one-time</span>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-3 mb-8">
-                {premiumFeatures.map((feature, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <CheckCircle
-                      className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                        i === 0 ? "text-primary" : "text-green-500"
-                      }`}
-                    />
-                    <span className={`${i === 0 ? "text-primary font-medium" : "text-gray-700"}`}>
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <Button
-                className="w-full h-12 text-base bg-gradient-to-r from-primary to-blue-700 hover:from-primary/90 hover:to-blue-700/90"
-                asChild
-              >
-                <a href="#contact">Get Priority Support</a>
-              </Button>
-              <p className="text-xs text-center text-gray-500 mt-3">
-                Recommended for accounts with 5,000+ followers
-              </p>
             </CardContent>
           </Card>
         </div>
 
-        {/* Trust Note */}
+        {/* Commitment Note */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-green-50 text-green-800 px-4 py-2 rounded-full text-sm">
-            <CheckCircle className="w-4 h-4" />
-            <span>14-day money-back guarantee if we can&apos;t help your case</span>
+          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-800 px-5 py-3 rounded-full text-sm font-medium border border-blue-200">
+            <Shield className="w-5 h-5" />
+            <span>We don&apos;t stop until your account is back. Most accounts are recovered within 2 to 4 weeks.</span>
           </div>
         </div>
       </div>

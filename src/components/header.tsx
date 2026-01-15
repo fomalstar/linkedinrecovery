@@ -19,8 +19,8 @@ export function Header() {
     <>
       {/* Announcement Bar */}
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm font-medium">
-        <span className="text-yellow-300 font-semibold">LinkedIn Account Restricted?</span>{" "}
-        Get Professional Recovery Help Starting at $50
+        <span className="text-yellow-300 font-semibold">LinkedIn Account Permanently Restricted?</span>{" "}
+        Get Professional Recovery Help for $50
       </div>
 
       {/* Main Header */}
