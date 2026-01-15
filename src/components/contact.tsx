@@ -42,10 +42,10 @@ export function Contact() {
                   <p className="text-gray-600">
                     Prefer email? Reach us at{" "}
                     <a
-                      href="mailto:linkedemergency@protonmail.com"
+                      href="mailto:linkedrecoveryhelp@gmail.com"
                       className="text-primary hover:underline"
                     >
-                      linkedemergency@protonmail.com
+                      linkedrecoveryhelp@gmail.com
                     </a>
                   </p>
                 </div>

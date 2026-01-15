@@ -17,7 +17,7 @@ import { CheckCircle, Loader2, Shield, Clock, Users } from "lucide-react";
 // Web3Forms - sends emails directly to your address
 // Set NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY in your .env file
 const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "";
-const RECIPIENT_EMAIL = "linkedemergency@protonmail.com";
+const RECIPIENT_EMAIL = "linkedrecoveryhelp@gmail.com";
 
 const followerRanges = [
   { value: "0-1000", label: "0 - 1,000 followers" },
