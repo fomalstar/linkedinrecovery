@@ -25,9 +25,9 @@ export function Hero() {
           {/* Left Column - Text Content */}
           <div className="text-center lg:text-left">
             {/* Main Headline - H1 with main keyword */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 mb-6">
               LinkedIn Account Permanently Restricted?{" "}
-              <span className="text-primary">Get Professional Recovery Help For $50</span>
+              <span className="text-primary">Get Recovery Help For $50</span>
             </h1>
 
             {/* Subtext with keywords */}

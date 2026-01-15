@@ -54,7 +54,7 @@ export function Pricing() {
                 className="w-full h-12 text-base font-semibold bg-primary hover:bg-primary/90"
                 asChild
               >
-                <a href="#contact">Get Started for $50</a>
+                <a href="#contact">Start Recovery Process</a>
               </Button>
             </CardContent>
           </Card>
