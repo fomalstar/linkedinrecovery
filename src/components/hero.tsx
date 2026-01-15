@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
       {/* Urgency Warning Banner */}
-      <div className="bg-amber-500 text-white py-3 px-4">
+      <div className="relative z-10 bg-amber-500 text-white py-3 px-4">
         <div className="mx-auto max-w-7xl flex items-center justify-center gap-3 text-center">
           <AlertTriangle className="w-5 h-5 flex-shrink-0 animate-pulse" />
           <p className="text-sm sm:text-base font-medium">
