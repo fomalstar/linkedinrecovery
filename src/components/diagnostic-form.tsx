@@ -56,13 +56,17 @@ export function DiagnosticForm() {
     const priorityLabel = isHighPriority ? "[HIGH PRIORITY - 10k+ followers]" : "[Standard]";
     
     // Build the submission data for Web3Forms
+    const firstName = formData.get("firstName");
+    const lastName = formData.get("lastName");
     const data = {
       access_key: WEB3FORMS_ACCESS_KEY,
-      subject: `${priorityLabel} New LinkedIn Recovery Request`,
+      subject: `${priorityLabel} New LinkedIn Recovery Request - ${firstName} ${lastName}`,
       from_name: "LinkedIn Recovery Website",
       to: RECIPIENT_EMAIL,
+      first_name: firstName,
+      last_name: lastName,
       email: formData.get("email"),
-      linkedin_url: formData.get("linkedinUrl"),
+      linkedin_url: formData.get("linkedinUrl") || "Not provided",
       follower_count: followers,
       restriction_reason: restrictionReasons.find(r => r.value === reason)?.label || reason,
       priority: isHighPriority ? "HIGH PRIORITY" : "Standard",
@@ -131,6 +135,31 @@ export function DiagnosticForm() {
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-2">
+              <Label htmlFor="firstName">First Name</Label>
+              <Input
+                id="firstName"
+                name="firstName"
+                type="text"
+                placeholder="John"
+                required
+                className="h-11"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="lastName">Last Name</Label>
+              <Input
+                id="lastName"
+                name="lastName"
+                type="text"
+                placeholder="Doe"
+                required
+                className="h-11"
+              />
+            </div>
+          </div>
+
           <div className="space-y-2">
             <Label htmlFor="email">Email Address</Label>
             <Input
@@ -144,13 +173,12 @@ export function DiagnosticForm() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="linkedinUrl">LinkedIn Profile URL</Label>
+            <Label htmlFor="linkedinUrl">LinkedIn Profile URL <span className="text-gray-400 font-normal">(optional)</span></Label>
             <Input
               id="linkedinUrl"
               name="linkedinUrl"
               type="url"
               placeholder="https://linkedin.com/in/yourprofile"
-              required
               className="h-11"
             />
           </div>
