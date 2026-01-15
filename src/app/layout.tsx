@@ -23,20 +23,25 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "LinkedIn Account Restricted? Get Professional Recovery Help | $50",
+  title: "LinkedIn Account Restricted? Professional LinkedIn Account Recovery Service",
   description:
-    "Professional LinkedIn account recovery service. Get your restricted LinkedIn account back with expert help. Starting at just $50. Fast, reliable, and confidential.",
+    "Is your LinkedIn account restricted? Get professional LinkedIn account recovery help. We fix restricted LinkedIn accounts fast. Why is my LinkedIn account restricted? We have the answers and solutions. Starting at $50.",
   keywords: [
     "linkedin account restricted",
-    "linkedin recovery",
+    "linkedin account recovery",
+    "linkedin restricted account",
+    "why is my linkedin account restricted",
+    "linkedin account suspended",
+    "linkedin account banned",
     "linkedin appeal",
-    "linkedin suspended",
     "linkedin account help",
+    "fix linkedin restriction",
+    "linkedin account locked",
   ],
   openGraph: {
     title: "LinkedIn Account Restricted? Get Professional Recovery Help",
     description:
-      "Professional LinkedIn account recovery service. Get your restricted LinkedIn account back with expert help.",
+      "Is your LinkedIn account restricted? Professional LinkedIn account recovery service. We help fix restricted LinkedIn accounts fast.",
     type: "website",
   },
 };

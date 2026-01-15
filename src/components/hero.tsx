@@ -13,21 +13,20 @@ export function Hero() {
           <div className="text-center lg:text-left">
             {/* Italic Accent Question */}
             <p className="font-[family-name:var(--font-playfair)] italic text-primary text-xl lg:text-2xl mb-4">
-              LinkedIn Account Restricted?
+              Why Is My LinkedIn Account Restricted?
             </p>
 
-            {/* Main Headline */}
+            {/* Main Headline - H1 with main keyword */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
-              Get Your{" "}
-              <span className="text-primary">Professional Network</span>{" "}
-              Back
+              LinkedIn Account Restricted?{" "}
+              <span className="text-primary">We Can Help</span>
             </h1>
 
-            {/* Subtext */}
+            {/* Subtext with keywords */}
             <p className="text-lg lg:text-xl text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0">
               Don&apos;t lose years of connections to an automated restriction. 
-              Our experts have recovered 500+ LinkedIn accounts. 
-              Starting at just <span className="font-semibold text-gray-900">$50</span>.
+              Our LinkedIn account recovery experts have helped 500+ professionals 
+              fix their restricted LinkedIn accounts. Starting at just <span className="font-semibold text-gray-900">$50</span>.
             </p>
 
             {/* Trust Indicators */}
@@ -89,7 +88,7 @@ export function Hero() {
       <div className="border-t border-gray-100 bg-gray-50/50 py-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="text-center font-[family-name:var(--font-playfair)] italic text-primary text-lg mb-6">
-            Trusted by professionals from companies worldwide
+            Trusted LinkedIn Account Recovery Service
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 opacity-60">
             {["Google", "Microsoft", "Amazon", "Meta", "Apple", "Netflix"].map(

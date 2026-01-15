@@ -13,10 +13,6 @@ const footerLinks = {
     { name: "FAQ", href: "#faq" },
     { name: "Success Stories", href: "#" },
   ],
-  legal: [
-    { name: "Privacy Policy", href: "/privacy" },
-    { name: "Terms of Service", href: "/terms" },
-  ],
 };
 
 export function Footer() {
@@ -25,7 +21,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-2 md:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <svg
                 viewBox="0 0 40 24"
@@ -47,8 +43,15 @@ export function Footer() {
                 LinkedIn<span className="text-primary">Recovery</span>
               </span>
             </Link>
-            <p className="mt-4 text-sm text-gray-600">
-              Professional LinkedIn account recovery services. Get your professional network back.
+            <p className="mt-4 text-sm text-gray-600 max-w-sm">
+              Professional LinkedIn account recovery service. Is your LinkedIn account restricted? 
+              We help professionals recover their restricted LinkedIn accounts and get back to networking.
+            </p>
+            <p className="mt-3 text-sm text-gray-600">
+              <strong>Email:</strong>{" "}
+              <a href="mailto:linkedemergency@protonmail.com" className="text-primary hover:underline">
+                linkedemergency@protonmail.com
+              </a>
             </p>
           </div>
 
@@ -74,23 +77,6 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-gray-900">Resources</h3>
             <ul className="mt-4 space-y-3">
               {footerLinks.resources.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-600 hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Legal Links */}
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900">Legal</h3>
-            <ul className="mt-4 space-y-3">
-              {footerLinks.legal.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}

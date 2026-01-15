@@ -183,11 +183,14 @@ export function Features() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="font-[family-name:var(--font-playfair)] italic text-primary text-xl mb-4">
-            What Can We Do For You?
+            LinkedIn Restricted Account? Here&apos;s How We Help
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Professional Recovery Services
+            LinkedIn Account Recovery Services
           </h2>
+          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            Our team specializes in fixing restricted LinkedIn accounts. We know why LinkedIn accounts get restricted and how to get them back.
+          </p>
         </div>
 
         {/* Feature Cards */}

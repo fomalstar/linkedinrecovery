@@ -27,13 +27,13 @@ export function Pricing() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <p className="font-[family-name:var(--font-playfair)] italic text-primary text-xl mb-4">
-            Transparent Pricing
+            LinkedIn Account Restricted? Affordable Recovery
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            Simple, Honest Pricing
+            LinkedIn Account Recovery Pricing
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            No hidden fees. No surprise charges. Just professional recovery service at a fair price.
+            No hidden fees. No surprise charges. Professional LinkedIn restricted account recovery at a fair price.
           </p>
         </div>
 

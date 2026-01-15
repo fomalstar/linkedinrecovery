@@ -20,8 +20,8 @@ export function Header() {
     <>
       {/* Announcement Bar */}
       <div className="bg-primary text-primary-foreground py-2 px-4 text-center text-sm font-medium">
-        <span className="text-yellow-300 font-semibold">Limited Time:</span>{" "}
-        Get Your LinkedIn Account Back in 24-48 Hours
+        <span className="text-yellow-300 font-semibold">LinkedIn Account Restricted?</span>{" "}
+        Get Professional Recovery Help Starting at $50
       </div>
 
       {/* Main Header */}
@@ -65,13 +65,10 @@ export function Header() {
             ))}
           </div>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center lg:gap-x-4">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/5">
-              Login
-            </Button>
-            <Button className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25">
-              Get Help Now
+            <Button className="bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/25" asChild>
+              <a href="#contact">Get Help Now</a>
             </Button>
           </div>
 
@@ -100,11 +97,8 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-4 border-t border-gray-100">
-                <Button variant="outline" className="w-full border-primary text-primary">
-                  Login
-                </Button>
-                <Button className="w-full bg-primary text-white">
-                  Get Help Now
+                <Button className="w-full bg-primary text-white" asChild>
+                  <a href="#contact">Get Help Now</a>
                 </Button>
               </div>
             </div>

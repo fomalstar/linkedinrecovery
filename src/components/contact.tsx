@@ -12,7 +12,7 @@ export function Contact() {
               Ready to Get Started?
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Let&apos;s Recover Your LinkedIn Account
+              LinkedIn Account Restricted? Let&apos;s Fix It
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Fill out the form and our team will review your case within 24 hours.
@@ -42,10 +42,10 @@ export function Contact() {
                   <p className="text-gray-600">
                     Prefer email? Reach us at{" "}
                     <a
-                      href="mailto:support@linkedinrecovery.com"
+                      href="mailto:linkedemergency@protonmail.com"
                       className="text-primary hover:underline"
                     >
-                      support@linkedinrecovery.com
+                      linkedemergency@protonmail.com
                     </a>
                   </p>
                 </div>
