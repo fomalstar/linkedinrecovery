@@ -1,9 +1,22 @@
 import { DiagnosticForm } from "@/components/diagnostic-form";
 import { HandDrawnArrowCurved } from "@/components/hand-drawn-arrow";
+import { AlertTriangle, Clock } from "lucide-react";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
+      {/* Urgency Warning Banner */}
+      <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 px-4">
+        <div className="mx-auto max-w-7xl flex items-center justify-center gap-3 text-center">
+          <AlertTriangle className="w-5 h-5 flex-shrink-0 animate-pulse" />
+          <p className="text-sm sm:text-base font-medium">
+            <span className="font-bold">Time is critical:</span> The first 7 days after restriction offer the highest chance of recovery. 
+            <span className="hidden sm:inline"> Acting quickly can make the difference between getting your account back or losing it permanently.</span>
+            <Clock className="w-4 h-4 inline ml-2 mb-0.5" />
+          </p>
+        </div>
+      </div>
+
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
